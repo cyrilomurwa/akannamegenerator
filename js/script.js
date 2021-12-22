@@ -1,5 +1,5 @@
 function generateAkanName () {
-    //pull elements from form
+    //pull elements from form 
     let yob1 = document.getElementById("yob").value;
     let mob1 = Number(document.getElementById("mob").value);
     let dob1 = Number(document.getElementById("dob").value);
@@ -71,8 +71,7 @@ function generateAkanName () {
       index = 6;
     } else {
       index = dayOfWeekNumber - 1;
-    }
-  
+    }  
     console.log(index);
   
     if (myGenderValue == "male" && validM && validD) {
