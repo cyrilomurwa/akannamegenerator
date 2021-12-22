@@ -17,7 +17,7 @@ HTML, CSS, Bootstrap and javaScript
 Input : Year of birth, Month of Birth, day of birth and select gender
 Output : Akan Name
 ## Sample
-
+<img width="891" alt="image" src="https://user-images.githubusercontent.com/93573731/147033425-3b0f70d2-abf2-4015-aea8-e66a86f84909.png">
 ## Support and contact details
 For support email cyrilondieki@gmail.com and you will be supported latest after 6 hours.
 ### License
