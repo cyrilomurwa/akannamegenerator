@@ -4,88 +4,86 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="initial-scale=1">
         <title>Akan Name Calculator</title>
-        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-        <link href='./css/styles.css' rel='stylesheet' type='text/css'>
-        </link>
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css"></link>
+        <link href='./css/styles.css' rel='stylesheet' type='text/css'></link>
+        <script type = "text/javascript" src="function.js"></script> 
+        
     </head>
     <body>
-        <div class="main">
-            <div class="header">
-              <div id="content">
-                    <img src="./images/barred.png" class="ribbon"/>
-              </div>
-              <div class="header_resize">
-                    <div class="ptitle">
-                        <h1><a href="./index.html">Cyril Omurwa</a></h1>
-                    </div>
-                    <div class="clr"></div>
-              </div>
-            </div>
-            <div id="page">
-                <div id="content_body">
-                    <div class="boxcontact">
-                        <h2>About Me</h2>
-                        <form class="" id="akan" onsubmit="return getAkanName()">
-                            <div class="form-group">
-                                <label for="">Enter Year of Birth</label>
-                                <input type="number" class="form-control" id="year-of-birth"  name="yob" placeholder="YYYY" value="" required>
-                            </div>
-                            <div class="form-item">
-            
-                            </div>
-                            <div class="form-item">
-            
-                            </div>
-                            <div class="form-item">
-            
-                            </div>
-                            <div class="form-item">
-            
-                            </div>
-                            <div class="form-item">
-            
-                            </div>
-                            <label for="year-of-birth">
-                              Year:
-                              <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
-                            </label>
-                            <label for="month-of-birth">
-                              Month:
-                              <input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
-                            </label>
-                            <label for="day-of-birth">
-                              Day:
-                              <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
-                            </label>
-                            <br>
-                            <label for="gender">
-                              <p>Select your gender: </p>
-                              Male
-                              <input id="male-input" type="radio" name="gender" value="male" required>
-                              Female
-                              <input id="female-input" type="radio" name="gender" value="female" required>
-                  
-                            </label>
-                            <br><br>
-                            <input id="get-name" type="submit" name="" value="Generate name">
-                            <br><br>
-                          </form>
-                          <form onsubmit="return clearInput()">
-                            <input class="clear" type="submit" value="Clear input">
-                          </form>
- 
-                    </div>
-                    <div class="box2contact">
-                        <h3>Drive || Notoriously Customer Obsessed</h3>
+        <div class="jumbotron-fluid">    
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                 <div class="card" id="card">
+                   <div class="card-title">
+                     <h2>AKAN Name History</h2> 
+                   </div>
+                    <div class="card-body">
+                        <p> 
+                          Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.
+                        </p>
                         <p>
-                           We're not competitor obsessed, we're <span>customer</span> obsessed. We start with the customer and we work backwards. ~ Jeff Bezos</br> I am persuing RPA training in Moringa to advance my skills in terms of not only providing support to my customers but enable them automate manual tasks for them to concentrate on more meaningful tasks.
+                          <table class="table">
+                                      <tr>
+                                        <th></th>
+                                        <th>Male</th>
+                                        <th>Female</th>
+                                      </tr>
+                                      <tr>
+                                        <td>Sunday</td>
+                                        <td>Kwasi</td>
+                                        <td>Akosua</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Monday</td>
+                                        <td>Kwadwo</td>
+                                        <td>Adwoa</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Tuesday</td>
+                                        <td>Kwabena</td>
+                                        <td>Abenaa</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Wednesday</td>
+                                        <td>Kwaku</td>
+                                        <td>Akua</td>
+                                      </tr>
+                                       <tr>
+                                        <td>Thursday</td>
+                                        <td>Yaw</td>
+                                        <td>Yaa</td>
+                                      </tr>
+                                       <tr>
+                                        <td>Friday</td>
+                                        <td>Kofi</td>
+                                        <td>Afua</td>
+                                      </tr>
+                                       <tr>
+                                        <td>Saturday</td>
+                                        <td>Kwame</td>
+                                        <td>Ama</td>
+                                      </tr>
+                          </table>	
                         </p>
                     </div>
-                </div>  
+                  </div>
+                </div>
+                     <div class="col-md-6">
+                       <div class="card">
+                         <div class="card-title" id="results">
+                           <h2>Find you AKAN Name Below:</h2>
+                         </div>
+                         <div class="card-body" id="results-card">
+                           
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
             </div>
-        </div>
-        <div id="footer">
-            <span> &copy; COO 2021 | Design by Cyril Omurwa | For RPA Training Assessment </span>
-         </div>
+            <div id="footer">
+                  <span> &copy; COO 2021 | Design by Cyril Omurwa | For RPA Training Assessment </span>
+            </div>
     </body>
 </html>

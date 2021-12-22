@@ -103,7 +103,7 @@ h1 a, h1 a:hover {
 }
 .boxcontact {
 	margin: 0 0 0 0;
-    width: 400px;
+    width: 500px;
     border-right-style:ridge;
 }
 .box2contact {
@@ -126,6 +126,3 @@ th {
 th.col1 {
     width: 25%
   }
-
-
-
