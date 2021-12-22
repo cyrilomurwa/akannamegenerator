@@ -75,7 +75,44 @@
                            <h2>Find you AKAN Name Below:</h2>
                          </div>
                          <div class="card-body" id="results-card">
-                           
+                            <form class="form-horizontal" id="akan" onsubmit="return getAkanName()">
+                                <div class="form-group row">
+                                    <div class="col-xs-2">
+                                        <label for="yob">Enter <strong>Year</strong> of Birth</label>
+                                        <input type="number" class="form-control form-control-sm" id="year-of-birth"  name="yob" placeholder="YYYY" value="" required>
+                                    </div> 
+                                </div>
+                                <div class="form-group row">                               
+                                    <div class="col-xs-2">
+                                        <label  for="mob">Enter <strong>Month</strong> of Birth</label>
+                                        <input type="number" class="form-control form-control-sm" id="month-of-birth"  name="mob" placeholder="MM" value="" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-xs-2">
+                                        <label for="dob">Enter <strong>Day</strong> of Birth</label>
+                                        <input type="number" class="form-control form-control-sm" id="day-of-birth"  name="dob" placeholder="DD" value="" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="gender">Select you <strong>Gender</strong></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                    <label class="form-check-label" for="female">Female</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                    <label class="form-check-label" for="male">Male</label>
+                                  </div>
+                                <br>
+                                <br><br>
+                                <input id="akanname" type="submit" name="" value="Generate Akan Name">
+                                <br><br>
+                            </form>
+                            <form onsubmit="return clearInput()">
+                                <input class="clear" type="submit" value="Clear Form        ">
+                            </form>
                          </div>
                        </div>
                      </div>
