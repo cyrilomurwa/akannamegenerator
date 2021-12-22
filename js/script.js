@@ -78,16 +78,18 @@ function generateAkanName () {
     console.log(index);
   
     if (myGenderValue == "male" && validM && validD) {
-      document.getElementById('result').textContent = "You were born on a " + daysOfWeek[index] + " and your Akan name is " + maleAkanNames[index];
-      document.getElementById('display-name').textContent = "Here is your Akan name: ";
-      document.getElementById('result').style.fontSize = "18px";
-      document.querySelector('h1').textContent = "Your Akan Name is :" + maleAkanNames[index];
+        alert("You were born on a " + daysOfWeek[index] + " and your Akan name is " + maleAkanNames[index];);
+     // document.getElementById('result').textContent = "You were born on a " + daysOfWeek[index] + " and your Akan name is " + maleAkanNames[index];
+     // document.getElementById('display-name').textContent = "Here is your Akan name: ";
+     // document.getElementById('result').style.fontSize = "18px";
+     // document.querySelector('h1').textContent = "Your Akan Name is :" + maleAkanNames[index];
       return false;
     } else if (myGenderValue == "female" && validM && validD) {
-      document.getElementById('result').textContent = "You were born on a " + daysOfWeek[index] + " , your Akan name is " + femaleAkanNames[index];
-      document.getElementById('display-name').textContent = "Here is your Akan name: ";
-      document.getElementById('result').style.fontSize = "18px";
-      document.querySelector('h1').textContent = "Your Akan Name is :"  + femaleAkanNames[index];
+      alert("You were born on a " + daysOfWeek[index] + " , your Akan name is " + femaleAkanNames[index]);
+      //document.getElementById('result').textContent = "You were born on a " + daysOfWeek[index] + " , your Akan name is " + femaleAkanNames[index];
+     // document.getElementById('display-name').textContent = "Here is your Akan name: ";
+     // document.getElementById('result').style.fontSize = "18px";
+     // document.querySelector('h1').textContent = "Your Akan Name is :"  + femaleAkanNames[index];
       return false;
     } else {
       alert("Invalid Day or Month Entered, Please Enter Again");
