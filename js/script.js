@@ -1,9 +1,8 @@
-
 function generateAkanName () {
     //pull elements from form
-    let yob = document.getElementById("yob").value;
-    let mob = Number(document.getElementById("mob").value);
-    let dob = Number(document.getElementById("dob").value);
+    let yob1 = document.getElementById("yob").value;
+    let mob1 = Number(document.getElementById("mob").value);
+    let dob1 = Number(document.getElementById("dob").value);
     let gender1 = document.getElementsByName("gender");
   
     // function to get selected gender
@@ -14,7 +13,6 @@ function generateAkanName () {
         }
       }
     }
-  
     let myGenderValue = getGender();
     console.log(myGenderValue);
   
@@ -28,17 +26,17 @@ function generateAkanName () {
     }
     // function to validate date value i.e leap year 29/28 for Feb the rest 30 or 31 
     function dayValidator () {
-      if (mob === 2 && Number(yob)%4 === 0) {
-        if (dob > 28 || dob < 1) {
+      if (mob1 === 2 && Number(yob1)%4 === 0) {
+        if (dob1 > 28 || dob1 < 1) {
           return false;
-        } else if (mob === 2 && dob > 29) {
+        } else if (mob1 === 2 && dob1 > 29) {
           return false;
-        } else if (mob === 2 && dob < 1) {
+        } else if (mob1 === 2 && dob1 < 1) {
           return false;
         } else {
           return true;
         }
-      } else if (dob < 1 || dob > 31){
+      } else if (dob1 < 1 || dob1 > 31){
         return false;
       } else {
         return true;
@@ -50,8 +48,8 @@ function generateAkanName () {
     let validD = dayValidator();
   
     //formula to determine day of birth from sunday to saturday
-    let dayOfWeekNumber = Math.floor((((Number(yob.slice(0,2))/4)-2*Number(yob.slice(0,2))-1)+
-            ((5*Number(yob.slice(2,4))/4))+((26*(mob+1)/10))+dob)%7);
+    let dayOfWeekNumber = Math.floor((((Number(yob1.slice(0,2))/4)-2*Number(yob1.slice(0,2))-1)+
+            ((5*Number(yob1.slice(2,4))/4))+((26*(mob1+1)/10))+dob1)%7);
   
     //creating arrays of Akan names for males & females and days of the week
     let daysOfWeek = [
@@ -78,7 +76,7 @@ function generateAkanName () {
     console.log(index);
   
     if (myGenderValue == "male" && validM && validD) {
-        alert("You were born on a " + daysOfWeek[index] + " and your Akan name is " + maleAkanNames[index];);
+        alert("You were born on a " + daysOfWeek[index] + " and your Akan name is " + maleAkanNames[index]);
      // document.getElementById('result').textContent = "You were born on a " + daysOfWeek[index] + " and your Akan name is " + maleAkanNames[index];
      // document.getElementById('display-name').textContent = "Here is your Akan name: ";
      // document.getElementById('result').style.fontSize = "18px";
